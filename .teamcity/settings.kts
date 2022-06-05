@@ -44,7 +44,7 @@ object Build : BuildType({
             conditions {
                 equals("teamcity.build.branch.is_default", "true")
             }
-            goals = "mvn clean package"
+            goals = "clean package"
             runnerArgs = "-Dmaven.test.failure.ignore=true"
         }
         maven {
