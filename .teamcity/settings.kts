@@ -53,7 +53,7 @@ object Build : BuildType({
             conditions {
                 equals("teamcity.build.branch.is_default", "false")
             }
-            goals = "mvn clean test"
+            goals = "clean test"
         }
     }
 
